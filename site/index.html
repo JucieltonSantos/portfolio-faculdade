@@ -6,6 +6,7 @@
 		<link rel="stylesheet" href="css/camera.css">
 		<link rel="stylesheet" href="css/component.css">
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 		<script src="js/jquery.js"></script>
 		<script src="js/jquery-migrate-1.1.1.js"></script>
 		<script src="js/jquery.equalheights.js"></script>
@@ -13,6 +14,7 @@
 		<script src="js/jquery.easing.1.3.js"></script>
 		<script src="js/camera.js"></script>
 		<script src="js/snap.svg-min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 		<!--[if (gt IE 9)|!(IE)]><!-->
 		<script src="js/jquery.mobile.customized.min.js"></script>
 		<!--<![endif]-->
@@ -49,11 +51,12 @@
 	<body class="page1">
 <!--==============================header=================================-->
 		<header>
-			<div class="container_12">
-				<div class="grid_12">
+			<div class="container">
+				<div class="col-sm-12">
 					<h1><a href="index.html"><img src="images/logo.png" alt="Boo House"></a></h1>
 					<div class="menu_block">
 						<nav id="bt-menu" class="bt-menu">
+							<br><br>
 							<a href="#" class="bt-menu-trigger"><span>Menu</span></a>
 							<ul>
 								<li class="current bt-icon"><a href="index.html">Home</a></li>
@@ -70,19 +73,22 @@
 				</div>
 			</div>
 		</header>
-		<div class="slider_wrapper">
-			<div id="camera_wrap" class="">
-				<div data-src="images/slide.jpg"></div>
+		<div class="container">
+			<div id="camera_wrap">
+				<div class="resposive" data-src="images/slide.jpg"></div>
 			</div>
-		</div>
-		<div class="container_12">
-			<div class="grid_12">
-				<div class="slogan">
-					Tecnologias<br>
+			<div id="camera_wrap">
+					<div class="resposive" data-src="images/slide.jpg"></div>
 				</div>
+		</div>
+		<div class="container">
+			<div class="col-sm-12">
+				<h3 class="col-sm-12 center">
+					Tecnologias<br>
+				</h3>
 			</div>
 		</div>
-		<div class="container_12">
+		<div class="container">
 			<section class="grid" id="grid">
 				<a href="#" data-path-hover="m 180,70.57627 -180,0 L 0,0 180,0 z">
 					<figure>
@@ -151,11 +157,10 @@
 			</section>
 		</div>
 <!--==============================Content=================================-->
-		<div class="content"><div class="ic"></div>
-			<div class="container_12">
+			<div class="container">
 				<div class="grid_6">
 					<img src="images/page1_img1.jpg" alt="" class="img_inner fleft">
-					<div class="extra_wrapper">
+					<div class="extra_wrapper"><br><br>
 						<div class="title1">Um pouco sobre mim!!!</div>
 						<p>Desenvolvedor Front End, hoje entusiasta Blockchain - Ethereum, trabalho com desenvolvimento de Smart Contracts e outras aplicações, adoro falar sobre as mudanças que a tecnologia Blockchain é capaz de trazer.</p>
 					</div>
@@ -163,7 +168,7 @@
 					Apaixonado por tecnologia tive a felicidade de conhecer a robótica educacional aos 15 anos onde participei em campeonatos, virei técnico de time e depois juiz de competições. Aprendi muito sobre valores pessoais, trabalho em equipe e programação. A partir dai ingressei no mercado de trabalho na area da tecnologia, atuei 6 anos no Banco Bradesco na área de Gestão e Projetos, fui para Digipix fiquei 1 ano na área de marketing como Front End e depois atuei por mais 1 ano e meio na área de marketing digital na J&J Marcenaria.
 				</div>
 				<div class="grid_3">
-					<div class="block1">
+					<div class="block1"><br><br>
 						<div class="title">Rhizom<span>Último TRAMPO!!!</span></div>
 						Programador Front End ,Ideação e desenvolvimento de aplicações Web utilizando tecnologia Blockchain, WEB3JS,
 Ethereum, HTML5, CSS3, Jquery, Bootstrap, JavaScript. 
@@ -171,20 +176,52 @@ Ethereum, HTML5, CSS3, Jquery, Bootstrap, JavaScript.
 					</div>
 				</div>
 				<div class="grid_3 ver">
-					<div class="block1">
+					<div class="block1"><br><br>
 						<div class="title">A Star Labs<span>Penúltimo Trampo</span></div>
 						Programador Front End , Desenvolvimento de aplicações Web utilizando tecnologia Blockchain, WEB3JS, Ethereum,
 HTML5, CSS3, Jquery, Bootstrap, JavaScript analista de sistemas e projetos de TI
-						<br>
+						<br><br><br>
 					</div>
 				</div>
 			</div>
 		</div>
-		
+		<div class="container">
+
+				<div class="row col-sm-12 align2">    
+						<p class="mt-5 align2 text-contact">Entre em contato, que juntos vamos desenvolver<br>melhores ideias.</p>
+                
+				  <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post" class="col-sm-8">
+					<div class="form-row">
+					  <div class="col-sm-4">
+						<input type="text" id="nome" pattern="[a-z\s]+$" class="form-control but-form" placeholder="Nome:" maxlength="20">
+					  </div>
+					  <div class="col-sm-8">
+						<input type="email" name="email" id="email" maxlength="50" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" class="form-control but-form left-button" placeholder="Email:" required="required">
+					  </div>
+					</div>
+					<div class="form-row">
+					  <div class="col-sm-4">
+						<input maxlength="15" name="phone"  id="phone"  pattern="\([0-9]{2}\) [0-9]{4,6}-[0-9]{3,4}$" type="tel" class="form-control but-form top-button" placeholder="Fone" required="required">
+					  </div>
+					  <div class="col-sm-8">
+						<input type="text" id="Empresa"  class="form-control but-form left-button top-button" placeholder="Empresa" required="required" maxlength="50">
+					  </div>
+
+					</div>
+					<div class="form-group">
+						<textarea id="texto1" class="form-control but-form top-button" id="exampleTextarea" rows="3" style="height: 200px;" placeholder="Mensagem" required="required" maxlength="200"></textarea>
+					  </div>
+				  </form>
+				</div>
+				<div class="row enviar">
+				  <button type="submit" class="btn btn-default link enviar" onclick="enviarEmail()"><a href="#" class="enviar"> Enviar <img src="imagens/ARROW.png" alt="" width="20"></a></button>   
+				</div>
+			</div>
 <!--==============================footer=================================-->
-		<footer>
-			<div class="container_12">
-				<div class="grid_12">
+		<footer class="container">
+			<div class="container">
+				<div class="row">
+				<div class="col-sm-12">
 					<div class="socials">
 						<a href="https://www.facebook.com/elton.santos.50364?ref=bookmarks" class="fa fa-facebook"></a>
 						<a href="https://twitter.com/ETN22" class="fa fa-twitter"></a>
@@ -194,6 +231,7 @@ HTML5, CSS3, Jquery, Bootstrap, JavaScript analista de sistemas e projetos de TI
 						&copy; 2018 | Jucielton Santos
 					</div>
 				</div>
+			</div>
 			</div>
 		</footer>
 		<script>
@@ -228,5 +266,7 @@ HTML5, CSS3, Jquery, Bootstrap, JavaScript analista de sistemas e projetos de TI
 			init();
 			})();
 		</script>
+		  <script src="js/smtp.js"></script>
+		  <script src="js/email.js"></script>
 	</body>
 </html>
